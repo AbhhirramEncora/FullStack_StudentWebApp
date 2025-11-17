@@ -1,6 +1,4 @@
-Here is a **professional, complete, production-ready README.md** for your repository with **badges, project architecture, setup steps, environment variables, deployment guide**, and clear notes about your **two branches (backend + frontend)**.
 
-You can **copy–paste this entire README.md** into your repo.
 
 ---
 
@@ -179,36 +177,8 @@ http://localhost:3000
 
 ---
 
-# 🌍 Deployment Guide
 
-## ⭐ Recommended Deployment Strategy
 
-### **Backend (Spring Boot + MySQL)**
-
-* Deploy on **Render**, **Railway**, or **AWS EC2**
-* Use either:
-
-  * Free MySQL on Railway (when available)
-  * Planetscale (Free)
-  * Aiven (Free trial)
-
-### **Frontend (React)**
-
-Deploy on:
-
-* **Netlify** (free)
-* **Vercel** (free)
-* **GitHub Pages**
-
-### Example Production Architecture
-
-```
-Netlify (React)
-        ↓
-Spring Boot API (Render)
-        ↓
-MySQL Cloud DB (Railway/Planetscale)
-```
 
 ---
 
@@ -249,8 +219,3 @@ Java | Spring Boot | React | MySQL
 
 ---
 
-If you want, I can also generate:
-✅ UML Diagram
-✅ API Documentation (Swagger-like)
-✅ Screenshots section
-Just say **"generate more sections"**.
