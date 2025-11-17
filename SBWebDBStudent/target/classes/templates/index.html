@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Students</title>
+</head>
+<body>
+<h2>Students List</h2>
+<form action="/save" method="post">
+    ID: <input type="number" name="id" required>
+    Name: <input type="text" name="name" required>
+    Email: <input type="text" name="email" required>
+    <button type="submit">Add</button>
+</form>
+
+<!-- Update Student Form -->
+<form action="/update" method="post">
+    ID: <input type="number" name="id" required placeholder="Enter ID to update">
+    Name: <input type="text" name="name" required placeholder="New Name">
+    Email: <input type="text" name="email" required placeholder="New Email">
+    <button type="submit">Update</button>
+</form>
+
+<table border="1">
+    <tr><th>ID</th><th>Name</th><th>Email</th><th>Action</th></tr>
+    <tr th:each="s : ${students}">
+        <td th:text="${s.id}"></td>
+        <td th:text="${s.name}"></td>
+        <td th:text="${s.email}"></td>
+        <td>
+            <a th:href="@{'/delete/' + ${s.id}}">Delete</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
